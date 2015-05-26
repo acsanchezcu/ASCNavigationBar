@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ASCHomeViewController.h
 //  ASCNavigationBar
 //
 //  Created by Abel Sánchez Custodio on 25/5/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ASCHomeViewController : UIViewController
 
 @end
-
