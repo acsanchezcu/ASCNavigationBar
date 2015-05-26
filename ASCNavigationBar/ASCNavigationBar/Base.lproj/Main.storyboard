@@ -258,11 +258,31 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="topLayoutConstraint" destination="8XJ-Nz-jgK" id="1yL-DE-Vy9"/>
+                        <segue destination="614-qX-ZbM" kind="push" identifier="goToSecondViewController" id="BDX-a0-NRu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="550" y="319"/>
+            <point key="canvasLocation" x="228" y="303"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="OUG-5o-pZU">
+            <objects>
+                <viewController id="614-qX-ZbM" customClass="ASCSecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v6P-LZ-rqJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="G5z-YM-MtK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DKh-nI-xyr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MgT-Xy-cze"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ffc-Jn-PAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="629" y="303"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jdh-PJ-gQM">
@@ -283,7 +303,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oix-MD-r9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="142" y="319"/>
+            <point key="canvasLocation" x="-180" y="303"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

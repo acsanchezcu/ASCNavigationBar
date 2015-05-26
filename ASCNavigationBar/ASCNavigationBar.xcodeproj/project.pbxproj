@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		346AC27B1B14878C00B844C4 /* ASCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 346AC27A1B14878C00B844C4 /* ASCSecondViewController.m */; };
+		346AC27F1B148A1700B844C4 /* UIImage+ASCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 346AC27E1B148A1700B844C4 /* UIImage+ASCExtension.m */; };
 		34D592481B136BFD00AB3ABA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D592471B136BFD00AB3ABA /* main.m */; };
 		34D5924B1B136BFD00AB3ABA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D5924A1B136BFD00AB3ABA /* AppDelegate.m */; };
 		34D592511B136BFD00AB3ABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34D5924F1B136BFD00AB3ABA /* Main.storyboard */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		346AC2791B14878C00B844C4 /* ASCSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCSecondViewController.h; sourceTree = "<group>"; };
+		346AC27A1B14878C00B844C4 /* ASCSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCSecondViewController.m; sourceTree = "<group>"; };
+		346AC27D1B148A1700B844C4 /* UIImage+ASCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ASCExtension.h"; sourceTree = "<group>"; };
+		346AC27E1B148A1700B844C4 /* UIImage+ASCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ASCExtension.m"; sourceTree = "<group>"; };
 		34D592421B136BFD00AB3ABA /* ASCNavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASCNavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D592461B136BFD00AB3ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34D592471B136BFD00AB3ABA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		346AC27C1B1489B900B844C4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				346AC27D1B148A1700B844C4 /* UIImage+ASCExtension.h */,
+				346AC27E1B148A1700B844C4 /* UIImage+ASCExtension.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		34D592391B136BFD00AB3ABA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +96,7 @@
 		34D592441B136BFD00AB3ABA /* ASCNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
+				346AC27C1B1489B900B844C4 /* Categories */,
 				34D5926B1B136C5A00AB3ABA /* Views */,
 				34D592491B136BFD00AB3ABA /* AppDelegate.h */,
 				34D5924A1B136BFD00AB3ABA /* AppDelegate.m */,
@@ -123,6 +139,8 @@
 			children = (
 				34D5926C1B136C9C00AB3ABA /* ASCHomeViewController.h */,
 				34D5926D1B136C9C00AB3ABA /* ASCHomeViewController.m */,
+				346AC2791B14878C00B844C4 /* ASCSecondViewController.h */,
+				346AC27A1B14878C00B844C4 /* ASCSecondViewController.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,8 +245,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346AC27F1B148A1700B844C4 /* UIImage+ASCExtension.m in Sources */,
 				34D5926E1B136C9C00AB3ABA /* ASCHomeViewController.m in Sources */,
 				34D5924B1B136BFD00AB3ABA /* AppDelegate.m in Sources */,
+				346AC27B1B14878C00B844C4 /* ASCSecondViewController.m in Sources */,
 				34D592481B136BFD00AB3ABA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +444,7 @@
 				34D592671B136BFD00AB3ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34D592681B136BFD00AB3ABA /* Build configuration list for PBXNativeTarget "ASCNavigationBarTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +453,7 @@
 				34D5926A1B136BFD00AB3ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

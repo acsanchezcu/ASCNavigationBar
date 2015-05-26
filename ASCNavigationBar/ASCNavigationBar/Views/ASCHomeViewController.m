@@ -12,6 +12,8 @@
 CGFloat const KEYBOARD_HEIGHT = 256.f;
 CGFloat const TOP_LAYOUT_CONSTRAINT = 16.f;
 
+NSString * const SecondViewControllerIdentifier = @"goToSecondViewController";
+
 
 @interface ASCHomeViewController ()
 <UITextFieldDelegate>
@@ -68,6 +70,8 @@ CGFloat const TOP_LAYOUT_CONSTRAINT = 16.f;
     
     [self.navigationController.navigationBar
      setTitleTextAttributes:@{NSForegroundColorAttributeName : tintColor}];
+    
+    self.navigationController.navigationBar.tintColor = tintColor;
 }
 
 - (IBAction)userDidChangeSwitchBackgroundImage:(id)sender
@@ -109,6 +113,11 @@ CGFloat const TOP_LAYOUT_CONSTRAINT = 16.f;
     [self hideKeyboard];
 }
 
+- (void)userDidTapBarButtonItem:(id)sender
+{
+    [self performSegueWithIdentifier:SecondViewControllerIdentifier sender:nil];
+}
+
 #pragma mark - Public Methods
 
 #pragma mark - Private Methods
@@ -121,6 +130,17 @@ CGFloat const TOP_LAYOUT_CONSTRAINT = 16.f;
     [self.view addGestureRecognizer:tapMainView];
     
     [self setTitleOfNavigationBar];
+    
+    [self createRightBarButtonItem];
+    
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+}
+
+- (void)createRightBarButtonItem
+{
+    UIBarButtonItem *barButtomItem = [[UIBarButtonItem alloc] initWithTitle:@"next" style:UIBarButtonItemStylePlain target:self action:@selector(userDidTapBarButtonItem:)];
+    
+    self.navigationItem.rightBarButtonItem = barButtomItem;
 }
 
 - (void)setTitleOfNavigationBar
